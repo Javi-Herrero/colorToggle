@@ -1,0 +1,153 @@
+body,
+body.white {
+  font-family: "Silkscreen";
+  font-size: 24px;
+}
+body .red,
+body.white .red {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  background-color: #c60b0b;
+}
+body .orange,
+body.white .orange {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+  background-color: #e99300;
+}
+body .yellow,
+body.white .yellow {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  background-color: #f6ff00;
+}
+body .green,
+body.white .green {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+  background-color: #00982e;
+}
+body .blue,
+body.white .blue {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  background-color: #235ae6;
+}
+body .purple,
+body.white .purple {
+  -webkit-animation-delay: 350ms;
+          animation-delay: 350ms;
+  background-color: #a141d8;
+}
+
+body.red {
+  background-color: #c60b0b;
+}
+
+body.orange {
+  background-color: #e99300;
+}
+
+body.yellow {
+  background-color: #f6ff00;
+}
+
+body.green {
+  background-color: #00982e;
+}
+
+body.blue {
+  background-color: #235ae6;
+}
+
+body.purple {
+  background-color: #a141d8;
+}
+
+ul {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  list-style-type: none;
+  width: 15vh;
+  line-height: 6vh;
+}
+
+.container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+}
+
+.dropdown {
+  width: auto;
+}
+.dropdown i {
+  cursor: pointer;
+}
+.dropdown .dropdown-content-initial {
+  display: none;
+}
+.dropdown .dropdown-content-closed {
+  display: block;
+}
+.dropdown .dropdown-content-closed li {
+  transform: translateX(-150%);
+  width: 112px;
+  -webkit-animation-name: navMovOut;
+          animation-name: navMovOut;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.45, -0.55, 0.82, 1.78);
+          animation-timing-function: cubic-bezier(0.45, -0.55, 0.82, 1.78);
+}
+.dropdown .dropdown-content-open {
+  display: block;
+}
+.dropdown .dropdown-content-open li {
+  cursor: pointer;
+  width: 112px;
+  -webkit-animation-name: navMovIn;
+          animation-name: navMovIn;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.45, -0.55, 0.82, 1.78);
+          animation-timing-function: cubic-bezier(0.45, -0.55, 0.82, 1.78);
+  /* transform: translateX(-150%); */
+}
+@-webkit-keyframes navMovIn {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+@keyframes navMovIn {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+@-webkit-keyframes navMovOut {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(-150%);
+  }
+}
+@keyframes navMovOut {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(-150%);
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,150 @@
+$red: #c60b0b;
+$orange: #e99300;
+$yellow: #f6ff00;
+$green: #00982e;
+$blue: #235ae6;
+$purple: #a141d8;
+
+body,
+body.white {
+    font-family: 'Silkscreen';
+    font-size: 24px;
+
+    .red {
+        animation-delay: 100ms;
+        background-color: $red;
+    }
+
+    .orange {
+        animation-delay: 150ms;
+        background-color: $orange;
+    }
+
+    .yellow {
+        animation-delay: 200ms;
+        background-color: $yellow;
+    }
+
+    .green {
+        animation-delay: 250ms;
+        background-color: $green;
+    }
+
+    .blue {
+        animation-delay: 300ms;
+        background-color: $blue;
+    }
+
+    .purple {
+        animation-delay: 350ms;
+        background-color: $purple;
+    }
+}
+
+
+
+body.red {
+    background-color: $red;
+}
+
+body.orange {
+    background-color: $orange;
+}
+
+body.yellow {
+    background-color: $yellow;
+}
+
+body.green {
+    background-color: $green;
+}
+
+body.blue {
+    background-color: $blue;
+}
+
+body.purple {
+    background-color: $purple;
+}
+
+ul {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    list-style-type: none;
+    width: 15vh;
+    line-height: 6vh;
+}
+
+.container {
+
+    width: fit-content;
+    padding: 0;
+}
+
+.dropdown {
+
+    width: auto;
+
+    i {
+        cursor: pointer;
+    }
+
+    .dropdown-content-initial {
+        display: none;
+    }
+
+    .dropdown-content-closed {
+        display: block;
+
+
+        li {
+            transform: translateX(-150%);
+            width: 112px;
+            animation-name: navMovOut;
+            animation-duration: 500ms;
+
+            animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(0.45, -0.55, 0.82, 1.78);
+
+
+        }
+
+    }
+
+    .dropdown-content-open {
+
+        display: block;
+
+        li {
+            cursor: pointer;
+            width: 112px;
+            animation-name: navMovIn;
+            animation-duration: 500ms;
+
+            animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(0.45, -0.55, 0.82, 1.78);
+            /* transform: translateX(-150%); */
+        }
+    }
+
+
+    @keyframes navMovIn {
+        from {
+            transform: translateX(-150%);
+        }
+
+        to {
+            transform: translateX(-25%);
+        }
+    }
+
+    @keyframes navMovOut {
+        from {
+            transform: translateX(-25%);
+        }
+
+        to {
+            transform: translateX(-150%);
+        }
+    }
+}
