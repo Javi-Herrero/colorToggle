@@ -11,32 +11,35 @@ body.white {
     font-size: 24px;
 
     .red {
-        animation-delay: 100ms;
+
         background-color: $red;
     }
 
     .orange {
-        animation-delay: 150ms;
+        animation-delay: 50ms;
+
         background-color: $orange;
     }
 
     .yellow {
-        animation-delay: 200ms;
+        animation-delay: 100ms;
         background-color: $yellow;
     }
 
     .green {
-        animation-delay: 250ms;
+        animation-delay: 150ms;
+
         background-color: $green;
     }
 
     .blue {
-        animation-delay: 300ms;
+        animation-delay: 200ms;
+
         background-color: $blue;
     }
 
     .purple {
-        animation-delay: 350ms;
+        animation-delay: 250ms;
         background-color: $purple;
     }
 }
